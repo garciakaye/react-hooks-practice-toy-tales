@@ -4,7 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "likes": {
+        "id": 1,
+        "name": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "likes": 8,
+        "liked": null
+      }
     },
     {
       "id": 2,
@@ -47,6 +53,11 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Sarge",
+      "image": "https://static.wikia.nocookie.net/pixar/images/7/71/Sarge.png",
+      "id": 10
     }
   ]
 }
