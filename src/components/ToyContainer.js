@@ -9,6 +9,7 @@ function ToyContainer( {toys, onDeleteToy} ) {
       key={toy.id}
       toy={toy} 
       onDeleteToy={onDeleteToy}
+      
       />
   ))
 

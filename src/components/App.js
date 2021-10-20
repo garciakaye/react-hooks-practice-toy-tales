@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3001/toys")
       .then((r) => r.json())
-      .then((toys) => setToys(toys))
+      .then(setToys)
     }, []);
 
   function handleClick() {
@@ -27,6 +27,7 @@ function App() {
       setToys(updatedToys)
   }
 
+  
   return (
     <>
       <Header />
@@ -34,7 +35,11 @@ function App() {
       <div className="buttonContainer">
         <button onClick={handleClick}>Add a Toy</button>
       </div>
-      <ToyContainer toys={toys} onDeleteToy={handleDeleteToy} />
+      <ToyContainer 
+      toys={toys} 
+      onDeleteToy={handleDeleteToy}
+      
+       />
     </>
   );
 }
