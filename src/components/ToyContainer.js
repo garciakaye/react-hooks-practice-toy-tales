@@ -1,7 +1,7 @@
 import React from "react";
 import ToyCard from "./ToyCard";
 
-function ToyContainer( {toys, onDeleteToy} ) {
+function ToyContainer( {toys, onDeleteToy, onUpdateToy} ) {
   // console.log(toys)
 
   const toyCards = toys.map((toy) => (
@@ -9,6 +9,7 @@ function ToyContainer( {toys, onDeleteToy} ) {
       key={toy.id}
       toy={toy} 
       onDeleteToy={onDeleteToy}
+      onUpdateToy={onUpdateToy}
       />
   ))
 
